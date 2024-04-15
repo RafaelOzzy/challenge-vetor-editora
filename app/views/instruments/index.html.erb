@@ -1,0 +1,9 @@
+<h1>Instruments#index</h1>
+
+<%= link_to "Criar novo Instrumento", new_instrument_path %>
+
+<% @instruments.each do |instrument| %>
+<h2>
+  <%= link_to "Instrumento #{instrument.id}", instrument_path(instrument) %>
+  </h2>
+<% end %>
